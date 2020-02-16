@@ -1,9 +1,22 @@
+const responsive =  {
+   0 : {
+      items  : 1
+   },
+    320 : { 
+     items  : 1
+   },
+   520 : { 
+     items  : 2
+   },
+   960 : { 
+    items : 3
+   }
+ }
+
 $(document).ready(function () {
   
-  //referencias
-
-
-  
+     //referencias
+  AOS.init();
     var nav = $('.nav') ,
    toggleCollapse  = $('.toggle-collapse');
  
@@ -20,8 +33,10 @@ owl.owlCarousel({
      autoplayTimeut : 3000,
      dots : false,
      nav : true,
-     navText : [$('.owl-navigation .owl-nav-prev') , $('.owl-navigation .owl-nav-next')]
- });
+     navText : [$('.owl-navigation .owl-nav-prev') , $('.owl-navigation .owl-nav-next')],
+     responsive : responsive
+     
+});
 
  //nav
  
@@ -38,11 +53,20 @@ nextBtn.click(function(e) {
 })
 // Go to the previous item
 prev.click(function(e) {
-    // With optional speed parameter
-    console.log('click prev');
+ 
     e.preventDefault();
     // Parameters has to be in square bracket '[]'
     owl.trigger('prev.owl.carousel', [300]);
 })
+
+//click to scrooll top
+
+var btnMoveUp = $('.move-up span');
+btnMoveUp.on('click' , function () {
+      $('html, body').animate( {
+           scrollTop : 0
+      } , 1000)
+ });
+
 
 });

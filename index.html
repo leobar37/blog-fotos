@@ -13,6 +13,9 @@
     <!-- owl-carousel -->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- cdn aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -58,7 +61,7 @@
    <main>
       <!-- ++++++++++++++++++++site title++++++++++++++++++++ -->
        <section class="site-title">
-          <div class="site-background">
+          <div class="site-background"  data-aos="fade-up" data-aos-delay="100">
               <h3>JOnathan</h3>
               <h1>Bautista Asalde</h1>
               <button class="btn">
@@ -73,7 +76,7 @@
         <div class="blog">
             <div class="container">
                <div class="owl-carousel owl-theme blog-post">
-                   <div class="div blog-content">
+                   <div class="div blog-content" data-aos="fade-right" data-aos-delay="200">
                      <img src="./assets/Blog-post/post-1.jpg" alt="post-1">
                      <!-- titulo de la tajeta -->
                      <div class="blog-title">
@@ -85,7 +88,7 @@
                         </div>
                      
                    </div>
-                   <div class="div blog-content">
+                   <div class="div blog-content" data-aos="fade-in" data-aos-delay="200">
                      <img src="./assets/Blog-post/post-3.jpg" alt="post-1">
                      <!-- titulo de la tajeta -->
                      <div class="blog-title">
@@ -97,7 +100,7 @@
                         </div>
                      
                    </div>
-                   <div class="div blog-content">
+                   <div class="div blog-content" data-aos="fade-left" data-aos-delay="200">
                      <img src="./assets/Blog-post/post-2.jpg" alt="post-1">
                      <!-- titulo de la tajeta -->
                      <div class="blog-title">
@@ -149,7 +152,7 @@
      <section class="container">
          <div class="site-content">
             <div class="posts">
-                <div class="post-content">
+                <div class="post-content" data-aos="fade-right" data-aos-delay="200">
                     <div class="post-image">
                         <div>
                             <img src="./assets/Blog-post/blog1.png" class="img" alt="blo1">
@@ -174,7 +177,7 @@
                  
                 </div>
                 <hr>
-                <div class="post-content">
+                <div class="post-content" data-aos="fade-in" data-aos-delay="200">
                     <div class="post-image">
                         <div>
                             <img src="./assets/Blog-post/blog2.png" class="img" alt="blo1">
@@ -198,8 +201,9 @@
                 </div>
                  
                 </div>
+         
                 <hr>
-                <div class="post-content">
+                <div class="post-content" >
                     <div class="post-image">
                         <div>
                             <img src="./assets/Blog-post/blog3.png" class="img" alt="blo1">
@@ -258,8 +262,160 @@
                 </div>
             </div>
             <aside class="sidebar">
-                 <h1>Sidebar</h1>
-            </aside>
+                 <!-- categorias -->
+                 <div class="category">
+                     <h3>Category</h3>
+                     <ul class="category-list">
+                         <li class="list-items">
+                             <a href="#">software</a>
+                             <span>(05)</span>
+                         </li>
+                         <li class="list-items">
+                             <a href="#">Fotografia</a>
+                             <span>(05)</span>
+                         </li>
+                         <li class="list-items">
+                             <a href="#">Tecnologia</a>
+                             <span>(05)</span>
+                         </li>
+                         <li class="list-items">
+                             <a href="#">software</a>
+                             <span>(05)</span>
+                         </li>
+                         <li class="list-items">
+                             <a href="#">Programacion</a>
+                             <span>(05)</span>
+                         </li>
+           
+                     </ul>
+                 </div>
+               <!-- blog posts -->
+            <div class="popular-post">
+                <h2>Popular Post</h2>
+                <div class="post-content">
+                    <div class="post-image">
+                        <div>
+                            <img src="./assets/popular-post/m-blog-1.jpg" class="img" alt="blo1">
+                        </div>
+                        <div class="post-info flex-row">
+                             <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                             <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; january  14, 2019</span>
+                             <span>2 comments</span>
+
+                        </div>
+                    </div>
+                    <div class="post-title">
+                        <a href="#">new data recording system to analyse road accidents</a>  
+                    </div>
+                 
+                </div>
+                <div class="post-content">
+                    <div class="post-image">
+                        <div>
+                            <img src="./assets/popular-post/m-blog-4.jpg" class="img" alt="blo1">
+                        </div>
+                        <div class="post-info flex-row">
+                             <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                             <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; january  14, 2019</span>
+                             <span>2 comments</span>
+
+                        </div>
+                    </div>
+                    <div class="post-title">
+                        <a href="#">new data recording system to analyse road accidents</a>  
+                    </div>
+                 
+                </div>
+                <div class="post-content">
+                    <div class="post-image">
+                        <div>
+                            <img src="./assets/popular-post/m-blog-5.jpg" class="img" alt="blo1">
+                        </div>
+                        <div class="post-info flex-row">
+                             <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                             <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; january  14, 2019</span>
+                             <span>2 comments</span>
+
+                        </div>
+                    </div>
+                    <div class="post-title">
+                        <a href="#">new data recording system to analyse road accidents</a>  
+                    </div>
+                 
+                </div>
+                <div class="post-content">
+                    <div class="post-image">
+                        <div>
+                            <img src="./assets/popular-post/m-blog-2.jpg" class="img" alt="blo1">
+                        </div>
+                        <div class="post-info flex-row">
+                             <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                             <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; january  14, 2019</span>
+                             <span>2 comments</span>
+
+                        </div>
+                    </div>
+                    <div class="post-title">
+                        <a href="#">new data recording system to analyse road accidents</a>  
+                    </div>
+                 
+                </div>
+                <div class="post-content">
+                    <div class="post-image">
+                        <div>
+                            <img src="./assets/popular-post/m-blog-3.jpg" class="img" alt="blo1">
+                        </div>
+                        <div class="post-info flex-row">
+                             <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                             <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; january  14, 2019</span>
+                             <span>2 comments</span>
+
+                        </div>
+                    </div>
+                    <div class="post-title">
+                        <a href="#">new data recording system to analyse road accidents</a>  
+                    </div>
+                 
+                </div>
+            </div>
+             <!-- newsletter -->
+             <div class="newsletter">
+                 <h2>Newsletter</h2>
+                 <div class="form-element">
+                     <input type="text" class="input-element" placeholder="Email">
+                    <button class="btn form-btn">
+                        Suscribe
+                    </button>
+                </div>
+             </div>
+             <!-- popular tags -->
+             <div class="popular-tags">
+                 <h2>poular tags</h2>
+                 <div class="tags">
+                    <span class="tag">
+                          software
+                    </span>
+                    <span class="tag">
+                          Literatura
+                    </span>
+                    <span class="tag">
+                          gramatica
+                    </span>
+                    <span class="tag">
+                          dramatica
+                    </span>
+                    <span class="tag">
+                          mitologia
+                    </span>
+                    <span class="tag">
+                          mitologia
+                    </span>
+                    <span class="tag">
+                          mitologia
+                    </span>
+                 </div>
+             </div>
+            </aside> 
          </div>
      </section>
       
@@ -269,12 +425,67 @@
    </main>
    
     <!-- +++++++++++++++++++++++++++++++main site sectionl +++++++++++++++++++++++++++++++-->
+
+    <!-- +++++++++++++++++++++++++++++++++footer+++++++++++++++++++++++++++++++++ -->
+      <footer class="footer">
+         <div class="container">
+            <div class="about-us">
+                <h2>About</h2>
+              <p> Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Actulizate con nuevo contendido</p>
+                <div class="form-element">
+                    <input type="text" placeholder="email"><span><i class="fas fa-chevron-right"></i></span>
+                </div> 
+            </div>
+             <div class="instagram">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="assets/instagram/thumb-card3.png" alt="insta 1">
+                    <img src="assets/instagram/thumb-card4.png" alt="insta 2">
+                    <img src="assets/instagram/thumb-card5.png" alt="insta 3">
+                </div>
+                <div class="flex-row">
+                    <img src="assets/instagram/thumb-card6.png" alt="insta 1">
+                    <img src="assets/instagram/thumb-card7.png" alt="insta 2">
+                    <img src="assets/instagram/thumb-card8.png" alt="insta 3">
+                </div>
+             </div>
+             <div class="follow">
+               <h2>Follow us</h2>
+               <p>para contratos</p>
+            <div>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>    
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+             </div>
+         </div>  
+          <div class="rights flex-row">
+              <h4 class="text-gray">
+                   Copyright @2019 Alll rigths reserved
+              </h4>
+          </div>
+          <div class="move-up">
+              <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+          </div>
+      </footer>
+      
+    <!-- +++++++++++++++*++++++++++++++++++footer++++++++++++++*+++++++++++++++++++ -->
 <!-- custom jquery -->
 <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
   
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
   <!-- owl-carousel -->
   <script src="js/owl.carousel.min.js"></script>
   <!-- custom javascript -->
