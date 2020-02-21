@@ -78,17 +78,19 @@ button.btn{
 }
 //estilos para javascript
 .collapse{
-    height: 30rem;
+    height: 30rem!important;
 }
 .nav {
    background: white; 
-   min-height: 10vh;
-
+   min-height: 16vh;
+   height: 0rem;
+   transition: height 1s ease-in-out;
      //toggle collapse
      .toggle-collapse{
         position: absolute;
         width: 95%;
         top: 5%;
+        cursor: pointer;
         display: none;
          .toggle-icons{
              display: flex;
@@ -121,15 +123,15 @@ button.btn{
             display: flex;
            //al establecerce por defecto flex despues se puede modificar 
            //el estado del flex (ocupado para el menu)
+          
             margin: 0;
             .nav-link{
                 padding: 1rem 1rem;
-                position: relative; 
-                 
+                position: relative;
+                font-family: $Abel;
                   a{
                      text-decoration: none;
                       font-family: $Abel ;
-                     
                       font-size:  1.1rem; 
                      
                   }
