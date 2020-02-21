@@ -55,6 +55,17 @@ button.btn {
 .nav {
   background: white;
   min-height: 10vh; }
+  .nav .toggle-collapse {
+    position: absolute;
+    width: 95%;
+    top: 5%;
+    display: none; }
+    .nav .toggle-collapse .toggle-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; }
+      .nav .toggle-collapse .toggle-icons i {
+        font-size: 1.5rem; }
   .nav .nav-menu {
     justify-content: space-between; }
     .nav .nav-menu .nav-brand {
@@ -63,15 +74,6 @@ button.btn {
         padding: 1.5rem .3rem;
         font-size: 1.3rem;
         display: block; }
-    .nav .nav-menu .toggle-collapse {
-      position: absolute;
-      width: 90%;
-      top: 0%;
-      display: none; }
-      .nav .nav-menu .toggle-collapse .toggle-icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end; }
     .nav .nav-menu .nav-items {
       display: flex;
       margin: 0; }

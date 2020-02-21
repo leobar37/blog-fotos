@@ -83,6 +83,23 @@ button.btn{
 .nav {
    background: white; 
    min-height: 10vh;
+
+     //toggle collapse
+     .toggle-collapse{
+        position: absolute;
+        width: 95%;
+        top: 5%;
+        display: none;
+         .toggle-icons{
+             display: flex;
+             flex-direction: row;
+             justify-content: flex-end;
+
+              i{
+                  font-size: 1.5rem;
+              }
+         }
+    }
    .nav-menu{
         justify-content: space-between; 
         //nav brand
@@ -97,18 +114,7 @@ button.btn{
              display: block;
            }
         }
-        //toggle collapse
-        .toggle-collapse{
-            position: absolute;
-            width: 90%;
-            top: 0%;
-            display: none;
-             .toggle-icons{
-                 display: flex;
-                 flex-direction: row;
-                 justify-content: flex-end;
-             }
-        }
+      
 
         //nav items
         .nav-items{
