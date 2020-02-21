@@ -1,0 +1,162 @@
+//paleta de colores
+$text-gray : #3f4954;
+$text-gray:  #3f4954;
+$text-light : #686666da;
+$bg-color :  #0f0f0f;
+$white :  #ffffff;
+$midnight : #104f55;
+ //gradiente para los botones
+$sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);    /*theme fonts*/
+//fuentes de google fonts  
+$Abel: 'Abel', sans-serif;
+  $Anton : 'Anton', sans-serif;
+  $Josefin : 'Josefin Sans', sans-serif;
+  $lexen : 'Lexend Deca', sans-serif;
+  $livvic :  'Livvic', sans-serif;
+
+/*=============================================
+=            estilos generales            =
+=============================================*/
+html,body {
+    margin: 0%;
+    //propiedad que hace que el padding y el margin sumen lo mismo
+    box-sizing: border-box;
+    //propiedad que hace que al pasarse el contenido del contenedor esta hara scroll
+    overflow-x: hidden;
+    //tamaño general del texto
+    font-size: 16px;
+}
+
+/*=============================================
+=            estilos globales            =
+=============================================*/
+
+//propiedad flex row reutilizable
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+//parrafos
+p{
+ font-family: $lexen;
+ color: $text-gray;
+}
+
+.text-gray{
+    color: $text-gray;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+ font-family: $lexen;
+ //por calibrar
+  font-size: 2.5rem;
+}
+h2{
+    font-family:  $lexen;
+
+}
+h3{
+    font-family:  $Abel;
+    font-size: 1.3rem;
+}
+//estilos para el enlace
+a{
+    text-decoration: none;
+    color: $text-gray;
+}
+//estilo  para el boton
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: $livvic;
+    cursor: pointer;
+}
+//estilos para javascript
+.collapse{
+    height: 30rem;
+}
+.nav {
+   background: white; 
+   min-height: 10vh;
+   .nav-menu{
+        justify-content: space-between; 
+        //nav brand
+        .nav-brand{
+            //para titulos grandes lexen
+           font-family: $lexen;
+           a{
+             padding: 1.5rem .3rem;
+             font-size: 1.3rem;
+             //si no se establece el display block 
+             //el elemento no obedece la regla del padding
+             display: block;
+           }
+        }
+        //toggle collapse
+        .toggle-collapse{
+            position: absolute;
+            width: 90%;
+            top: 0%;
+            display: none;
+             .toggle-icons{
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: flex-end;
+             }
+        }
+
+        //nav items
+        .nav-items{
+            display: flex;
+           //al establecerce por defecto flex despues se puede modificar 
+           //el estado del flex (ocupado para el menu)
+            margin: 0;
+            .nav-link{
+                padding: 1rem 1rem;
+                position: relative; 
+                 
+                  a{
+                     text-decoration: none;
+                      font-family: $Abel ;
+                     
+                      font-size:  1.1rem; 
+                     
+                  }
+                  &:hover{
+                    background: $midnight ; 
+                    a{
+                        color: white;
+                        cursor: pointer; 
+                    }
+                  }
+             }
+        }
+        //social
+        .social{
+             font-size: 1.1rem;
+            padding: 1.5rem 0;
+            a{
+                padding: 0.3rem;
+               i:hover{
+                  color: #a1c4cf;
+               }
+            }
+
+        }
+   }
+}
+
+@media only screen and(max-width : 750px){
+  .nav .nav-menu ,nav .nav-items{
+    flex-direction: column;
+  }
+  .nav .toggle-collapse{
+
+     display: initial!important;
+ }
+}

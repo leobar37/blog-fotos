@@ -1,0 +1,105 @@
+/*theme fonts*/
+/*=============================================
+=            estilos generales            =
+=============================================*/
+html, body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 16px; }
+
+/*=============================================
+=            estilos globales            =
+=============================================*/
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: #3f4954; }
+
+.text-gray {
+  color: #3f4954; }
+
+ul {
+  list-style-type: none; }
+
+h1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 2.5rem; }
+
+h2 {
+  font-family: "Lexend Deca", sans-serif; }
+
+h3 {
+  font-family: "Abel", sans-serif;
+  font-size: 1.3rem; }
+
+a {
+  text-decoration: none;
+  color: #3f4954; }
+
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: "Livvic", sans-serif;
+  cursor: pointer; }
+
+.collapse {
+  height: 30rem; }
+
+.nav {
+  background: white;
+  min-height: 10vh; }
+  .nav .nav-menu {
+    justify-content: space-between; }
+    .nav .nav-menu .nav-brand {
+      font-family: "Lexend Deca", sans-serif; }
+      .nav .nav-menu .nav-brand a {
+        padding: 1.5rem .3rem;
+        font-size: 1.3rem;
+        display: block; }
+    .nav .nav-menu .toggle-collapse {
+      position: absolute;
+      width: 90%;
+      top: 0%;
+      display: none; }
+      .nav .nav-menu .toggle-collapse .toggle-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; }
+    .nav .nav-menu .nav-items {
+      display: flex;
+      margin: 0; }
+      .nav .nav-menu .nav-items .nav-link {
+        padding: 1rem 1rem;
+        position: relative; }
+        .nav .nav-menu .nav-items .nav-link a {
+          text-decoration: none;
+          font-family: "Abel", sans-serif;
+          font-size: 1.1rem; }
+        .nav .nav-menu .nav-items .nav-link:hover {
+          background: #104f55; }
+          .nav .nav-menu .nav-items .nav-link:hover a {
+            color: white;
+            cursor: pointer; }
+    .nav .nav-menu .social {
+      font-size: 1.1rem;
+      padding: 1.5rem 0; }
+      .nav .nav-menu .social a {
+        padding: 0.3rem; }
+        .nav .nav-menu .social a i:hover {
+          color: #a1c4cf; }
+
+@media only screen and (max-width: 750px) {
+  .nav .nav-menu, nav .nav-items {
+    flex-direction: column; }
+
+  .nav .toggle-collapse {
+    display: initial !important; } }
+
+/*# sourceMappingURL=estilos.css.map */

@@ -21,8 +21,7 @@ $(document).ready(function () {
    toggleCollapse  = $('.toggle-collapse');
  
     toggleCollapse.on('click' , function () {
-    nav.toggleClass('collapse');
-     
+       nav.toggleClass('collapse');
      })
 
   var owl=   $('.owl-carousel ');
